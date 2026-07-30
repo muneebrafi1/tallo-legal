@@ -93,7 +93,7 @@
     <header class="doc">
       <span class="brand">Calxo</span>
       <h1>Privacy Policy</h1>
-      <p class="updated">Effective date: 1 July 2026</p>
+      <p class="updated">Effective date: 30 July 2026</p>
     </header>
 
     <main class="card">
@@ -109,7 +109,9 @@
         <li>
           <strong>Account information.</strong> When you first open Calxo we automatically create an
           <strong>anonymous account</strong> so your data can be saved and synced &mdash; no email or sign-up is required
-          to start. You may optionally add an email address and password later to secure and recover your account.
+          to start. You may optionally add an email address and password later to secure and recover your account, or
+          sign in with Apple or Google &mdash; in which case that provider tells us your email address, and (for Apple,
+          if you allow it) your name. We use them only to identify your account; we never post anything to those accounts.
         </li>
         <li>
           <strong>Profile and health information.</strong> To calculate your goals we store details you enter, such as
@@ -118,8 +120,13 @@
         </li>
         <li>
           <strong>Food, activity, and wellness data.</strong> We store the meals and foods you log (including calories
-          and macros), meal photos, water intake, fasting sessions, exercise, weight history, streaks, achievements,
-          notes, and messages you send to the AI coach.
+          and macros), meal photos, fasting sessions, exercise, weight history, body measurements, streaks, your recent
+          food searches, any corrections you save to a food estimate, and messages you send to the AI coach.
+        </li>
+        <li>
+          <strong>Apple Health data (iPhone only, if you connect it).</strong> Your daily step count and active energy
+          are read from Apple Health, and &mdash; with separate permission &mdash; the meals you log are written into
+          Apple Health. See &ldquo;Apple Health (HealthKit)&rdquo; below.
         </li>
         <li>
           <strong>Meal photos.</strong> If you scan a meal or add a meal picture, the image is used to estimate nutrition
@@ -148,12 +155,24 @@
       </ul>
       <p>We do not sell your personal information, and we do not use it for advertising.</p>
 
-      <h2>Anonymous accounts</h2>
+      <h2>Accounts and sign-in</h2>
       <p>
         Calxo is designed to work without you creating a traditional account. On first launch we generate an anonymous
         identifier that lets us store and sync your data privately to your device&rsquo;s session. If you want to secure
-        your progress or move to a new device, you can optionally add an email and password. Adding an email is entirely
-        your choice.
+        your progress or move to a new device, you can optionally add an email and password, or sign in with Apple or
+        Google. Signing in is entirely your choice.
+      </p>
+      <p>
+        If you sign in with Apple or Google, that provider tells us your email address so we can identify your account,
+        and Apple can also pass your name if you choose to share it. We do not receive your password, we do not post
+        anything to those accounts, and we do not use them to look up anything else about you.
+      </p>
+      <p>
+        Some information stays on your phone and is never sent to us: your appearance, reminder, and step-goal
+        preferences, your fasting plan, the onboarding answers held locally until your plan is saved, and &mdash; if a
+        photo scan was still running when the app closed &mdash; a small marker holding that photo&rsquo;s location on
+        your device, your account id, and the time, so the scan isn&rsquo;t silently lost. Removing the app deletes all
+        of it.
       </p>
 
       <h2>Meal photos</h2>
@@ -164,6 +183,22 @@
         people or sensitive documents in meal photos.
       </p>
 
+      <h2>Apple Health (HealthKit)</h2>
+      <p>
+        Apple Health integration is available on iPhone and is entirely optional &mdash; nothing is read or written
+        unless you connect it. If you connect Apple Health, Calxo <strong>reads</strong> your daily step count and
+        active energy (calories burned) with your permission, and &mdash; if you also allow it separately &mdash;
+        <strong>writes</strong> the meals you log (calories, protein, carbohydrates, and total fat) into Apple Health so
+        your nutrition lives alongside your other health data.
+      </p>
+      <p>
+        Health data read by Calxo is used <strong>only on your device</strong>, to show your daily step progress and the
+        calories you&rsquo;ve burned. We never send your Apple Health data to our servers, to our AI provider, to
+        advertisers, or to any third party, and we never use it for advertising or data mining. Reading and writing are
+        controlled separately, and you can revoke either at any time in
+        iOS Settings &rsaquo; Privacy &amp; Security &rsaquo; Health &rsaquo; Calxo.
+      </p>
+
       <h2>AI processing (OpenAI)</h2>
       <p>
         Several Calxo features are powered by AI. When you use them, the relevant content is sent to our AI provider,
@@ -172,7 +207,9 @@
       <ul>
         <li><strong>Scan or describe a meal:</strong> the food photo or your text description is sent to OpenAI to estimate the dish and its nutrition.</li>
         <li><strong>Voice logging:</strong> your recorded audio is sent to OpenAI to transcribe it into text.</li>
-        <li><strong>AI coach:</strong> your chat messages, together with relevant context derived from your profile and recent logs (such as your goals, targets, recent foods, and weight trend), are sent to OpenAI to generate a reply.</li>
+        <li><strong>AI coach:</strong> your chat messages, together with a short profile summary so its advice fits you &mdash; your first name, your goal and target weight, your recent weight trend, your calorie and macro targets, your dietary preference and any challenges you told us about, and the names of foods you logged recently &mdash; are sent to OpenAI to generate a reply.</li>
+        <li><strong>Meal plans:</strong> your dietary preference and the ingredients you asked us to use or avoid are sent to OpenAI to build the plan.</li>
+        <li><strong>Food corrections:</strong> if you have saved a correction to a food estimate, we include it so new estimates match it.</li>
         <li><strong>Meal plans:</strong> your calorie/macro targets and any preferences you provide are sent to OpenAI to generate a plan.</li>
       </ul>
       <p>
@@ -190,7 +227,8 @@
         &mdash; <strong>Open Food Facts</strong> and the <strong>USDA FoodData Central</strong> database &mdash; to return
         nutrition results. When you search for recipes, your search term is sent to <strong>Spoonacular</strong> to return
         recipe results. These lookups do not require your personal profile; only the query you enter is sent. Results may
-        be cached on our servers to speed up future searches.
+        be cached on our servers to speed up future searches. Recipe photos are loaded directly from Spoonacular as you
+        browse, so your device contacts Spoonacular to fetch those images.
       </p>
 
       <h2>How your information is shared</h2>
@@ -221,7 +259,7 @@
 
       <h2>Notifications</h2>
       <p>
-        Reminders (such as meal, water, streak, and weekly-recap nudges) are <strong>local notifications</strong>
+        Reminders (such as meal, streak, and weekly-recap nudges) are <strong>local notifications</strong>
         scheduled on your device. We do not run a push-notification server, and reminder scheduling stays on your phone.
         You can turn reminders on or off in the app and in your device settings.
       </p>
@@ -249,6 +287,11 @@
         records from our systems, and removes your authentication account. Cached, non-personal food/recipe lookups and
         aggregate, de-identified diagnostic records may be retained. If you can no longer access the app, you can also
         <a href="./delete-account.html">request account and data deletion on the web</a>.
+      </p>
+      <p>
+        If you connected Apple Health, the meals Calxo saved there <strong>stay in Apple Health</strong> after you delete
+        your account &mdash; that copy lives on your device and belongs to you. You can remove it in the Health app under
+        Profile &rsaquo; Apps and Services &rsaquo; Calxo &rsaquo; Delete All Data from Calxo.
       </p>
 
       <h2>Children&rsquo;s privacy and age</h2>
