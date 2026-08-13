@@ -147,7 +147,7 @@
       <p>We use your information to:</p>
       <ul>
         <li>calculate your calorie and macro targets and adapt them to your progress;</li>
-        <li>analyze the foods you log and generate coaching replies and meal plans;</li>
+        <li>analyze the foods you log and generate coaching replies;</li>
         <li>track your history, streaks, and insights;</li>
         <li>send the local reminders you enable;</li>
         <li>keep your data backed up and in sync across sessions; and</li>
@@ -192,8 +192,10 @@
         your nutrition lives alongside your other health data.
       </p>
       <p>
-        Health data read by Calxo is used <strong>only on your device</strong>, to show your daily step progress and the
-        calories you&rsquo;ve burned. We never send your Apple Health data to our servers, to our AI provider, to
+        Your step count and active energy are used <strong>only on your device</strong>, to show your daily step
+        progress and the calories you&rsquo;ve burned; we never send them to our servers. If you allow Calxo to read
+        your body weight, a weigh-in imported from Apple Health is saved to your Calxo weight history on our servers,
+        exactly like a weigh-in you type in yourself. We never send your Apple Health data to our AI provider, to
         advertisers, or to any third party, and we never use it for advertising or data mining. Reading and writing are
         controlled separately, and you can revoke either at any time in
         iOS Settings &rsaquo; Privacy &amp; Security &rsaquo; Health &rsaquo; Calxo.
@@ -208,9 +210,7 @@
         <li><strong>Scan or describe a meal:</strong> the food photo or your text description is sent to OpenAI to estimate the dish and its nutrition.</li>
         <li><strong>Voice logging:</strong> your recorded audio is sent to OpenAI to transcribe it into text.</li>
         <li><strong>AI coach:</strong> your chat messages, together with a short profile summary so its advice fits you &mdash; your first name, your goal and target weight, your recent weight trend, your calorie and macro targets, your dietary preference and any challenges you told us about, and the names of foods you logged recently &mdash; are sent to OpenAI to generate a reply.</li>
-        <li><strong>Meal plans:</strong> your dietary preference and the ingredients you asked us to use or avoid are sent to OpenAI to build the plan.</li>
         <li><strong>Food corrections:</strong> if you have saved a correction to a food estimate, we include it so new estimates match it.</li>
-        <li><strong>Meal plans:</strong> your calorie/macro targets and any preferences you provide are sent to OpenAI to generate a plan.</li>
       </ul>
       <p>
         AI results are estimates and may not be exact. The AI provider processes this content to return a result to you.
@@ -238,7 +238,7 @@
       </p>
       <ul>
         <li><strong>Supabase</strong> &mdash; our cloud database, authentication, and storage provider, which hosts your account data and meal photos.</li>
-        <li><strong>OpenAI</strong> &mdash; our AI provider, used to analyze food, transcribe voice, generate meal plans, and power the coach.</li>
+        <li><strong>OpenAI</strong> &mdash; our AI provider, used to analyze food, transcribe voice, and power the coach.</li>
         <li><strong>Open Food Facts, USDA FoodData Central, and Spoonacular</strong> &mdash; food and recipe databases used to answer your searches.</li>
         <li><strong>RevenueCat</strong> together with the <strong>Apple App Store</strong> or <strong>Google Play</strong> &mdash; to process and manage subscriptions.</li>
       </ul>
